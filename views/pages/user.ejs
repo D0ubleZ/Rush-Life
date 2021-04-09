@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./stylesheets/user.css">
+    <title></title>
+
+    <style>
+      input{
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="container">
+
+
+    <h1 align="center">H&nbspE&nbspA&nbspL&nbspT&nbspH&nbsp&nbsp&nbsp L&nbspI&nbspF&nbspE</h1>
+
+
+    <form action="stats" method="post">
+      <input type="text" value="<%= customers.rows[0].name %>" name="name" required>
+      <input type="text" value="<%= customers.rows[0].password %>" name="password" required>
+      <input type="text" value="<%= customers.rows[0].age %>" name="age" required>
+      <input type="text" value="<%= customers.rows[0].gender %>" name="gender" required>
+      <input type="text" value="<%= customers.rows[0].height %>" name="height" required>
+      <input type="text" value="<%= customers.rows[0].weight %>" name="weight" required>
+      <input type="text" value="<%= customers.rows[0].food %>" name="food" required>
+      <input type="text" value="<%= customers.rows[0].fat_percent %>" name="fat_percent" required>
+
+      <button type="submit" class="btn button5 button5a" name="btn5">Work</button>
+
+    </form>
+
+    <form action="carlendar.html" method="get">
+      <button class="btn button2" name="btn2">Carlender</button>
+    </form>
+    <form action=".html" method="get">
+      <button class="btn button3" name="btn3">Forum</button>
+    </form>
+    <form action=".html" method="get">
+      <button class="btn button4" name="btn4">Shop</button>
+    </form>
+    <form action="userinfo" method="post">
+      <input type="text" value="<%= customers.rows[0].name %>" name="name" required>
+      <input type="text" value="<%= customers.rows[0].password %>" name="password" required>
+      <input type="text" value="<%= customers.rows[0].age %>" name="age" required>
+      <input type="text" value="<%= customers.rows[0].gender %>" name="gender" required>
+      <input type="text" value="<%= customers.rows[0].height %>" name="height" required>
+      <input type="text" value="<%= customers.rows[0].weight %>" name="weight" required>
+      <input type="text" value="<%= customers.rows[0].food %>" name="food" required>
+      <input type="text" value="<%= customers.rows[0].fat_percent %>" name="fat_percent" required>
+
+      <button type="submit" class="btn button1" name="btn1">YOU</button>
+    </form>
+
+
+
+
+    <div class="dropdown" style="float:left;">
+      <button class="dropbtn">------Home------</button>
+      <div class="dropdown-content" style="left:0;">
+      <a href="#">Update</a>
+
+      <a href="login.html">Sign out</a>
+
+      </div>
+
+
+  </body>
+</html>

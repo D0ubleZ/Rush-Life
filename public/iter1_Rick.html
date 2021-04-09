@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <style>
+        body,html{
+                height: 100%;
+                margin: 0;
+            }
+        .background{
+            background-image:url("background-citric-citrus-1493378.jpg");
+            height:100%;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+
+        class_name{
+          display: none;
+        }
+    </style>
+</head>
+
+<body class="background">
+  <div id = "div1"></div>
+<div style="padding:8%"></div>
+<h2 align="center">Let's get start with your information!</h2>
+<form action="user_research" method="post">
+  <input  style="display:none" class = "class_name" type="text" name="name" id="name">
+    <table style="width:25%" align="center" >
+        <tr>
+            <td>Your Age: </td>
+            <td><input type="text" name="age"></td>
+        </tr>
+        <tr>
+            <td>Your Gender:</td>
+            <td><input type="text" name="gender"></td>
+        </tr>
+        <tr>
+            <td>Your Height:</td>
+            <td><input type="text" name="height"></td>
+        </tr>
+        <tr>
+            <td>Your Weight:</td>
+            <td><input type="text" name="weight"></td>
+        </tr>
+        <tr>
+            <td>Your Preferred Foods:</td>
+            <td><input type="text" name="food"></td>
+        </tr>
+        <tr>
+            <td>Your Body Fat Percentage:</td>
+            <td><input type="text" name="fat_percent"></td>
+        </tr>
+
+
+        <input  style="display:none" type="text" name="time" value="0">
+        <tr>
+            <td> <input type="submit" value="Done!"></td>
+        </tr>
+    </table>
+</form>
+</body>
+<script src='cookie.js'></script>
+    <script>
+    window.onload=function(){
+        var num=cookie.getCookie('num');
+        var oDiv=document.getElementById('div1');
+
+        oDiv.innerHTML="---User:"+num+"'s page---";
+        document.getElementById('name').value = num;
+
+      }
+
+    </script>

@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.td1{
+  height:50px;
+  font-size: 20px;
+  font-family: serif;
+  font-style: normal;
+}
+.td2{
+  height:30px;
+  font-size: 18px;
+  font-family: serif;
+  font-style: normal;
+}
+.word{
+  font-size: 20px;
+  font-family: serif;
+  font-style: normal;
+}
+.container {
+  /* The image used */
+  background-image: url("../14Wqk7.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.select1{
+  width:100px;
+  font-size: 20px;
+}

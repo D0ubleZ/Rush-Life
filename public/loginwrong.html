@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="google-signin-client_id" content="90310591435-2h5b1crmu0e6ktl9f9ak7j3nm5jttcs4.apps.googleusercontent.com">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./stylesheets/login.css">
+
+    <!-- Latest compiled and minified CSS -->
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>login</title>
+    <script src='cookie.js'></script>
+        <script>
+            window.onload = function() {
+                var res = document.getElementById('email');
+                var button1 = document.getElementById('button');
+                button1.onclick = function() {
+                    var resNum = res.value;
+                    cookie.setCookie('num', resNum);
+                  }
+            }
+        </script>
+  </head>
+  <body style="background-image:url('bestfriend.jpg');">
+	
+    <div1>
+    <h1 align="center">Rush Life</h1>
+    </div1>
+      <div>
+
+        <form action="/login" class="container" method="post">
+
+          <label for="email"><b>Username</b></label>
+          <input type="text" placeholder="Enter username" name="email" id = "email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <p style = "color:red">Name and password do not match</p>
+
+          <button type="submit" class="btn" id = "button1">Login</button>
+
+
+
+          <div class="g-signin2" data-onsuccess="onSignIn"></div>
+          <a href="#" onclick="signOut();">Sign out</a>
+          <p></p>
+          <centre>New to Rush-Life?
+
+  <a href="signup.html">
+  Sign up
+  </a>
+
+          or continue as <a href="user.html">guest</a></centre>
+        </form>
+
+      </div>
+
+
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+  </body>
+</html>

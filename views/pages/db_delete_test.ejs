@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="./stylesheets/admin.css">
+
+</head>
+<body>
+
+
+  <h2>Customer</h2>
+
+
+  <table id="myTable"></table>
+  <table id="myTable">
+    <tr class="header">
+      <th style="width:12.5%;">Name</th>
+      <th style="width:12.5%;">Password</th>
+      <th style="width:12.5%;">Age</th>
+      <th style="width:12.5%;">Gender</th>
+      <th style="width:12.5%;">Height</th>
+      <th style="width:12.5%;">Weight</th>
+      <th style="width:12.5%;">Food</th>
+      <th style="width:12.5%;">Fat_percent</th>
+    </tr>
+    <% for (var i = 0; i < customers.rows.length; i++) { %>
+      <tr>
+      <td><%= customers.rows[i].name %></td>
+      <td><%= customers.rows[i].password %></td>
+      <td><%= customers.rows[i].age %></td>
+      <td><%= customers.rows[i].gender %></td>
+      <td><%= customers.rows[i].height %></td>
+      <td><%= customers.rows[i].weight %></td>
+      <td><%= customers.rows[i].food %></td>
+      <td><%= customers.rows[i].fat_percent %></td>
+      </tr>
+      <% }; %>
+  </table>
+  <form class="text" action="delete" method="post">
+      Name(Delete) : <input type="text" name="name" >
+      <button style="width:100px;height:50px" type="submit" name="Delete" >Delete
+  </form>
+  <form action="back1" method="get" style="font-size:20px">
+    <button style="width:100px;height:50px" type="submit" name="btn1">Sign Out</button>
+  </form>
+  <p style="color:red">There is no such user found!</p>
+</body>
+
+
+
+
+</html>

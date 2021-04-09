@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Dancing Script');
+body, html {
+    margin:0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 380px;
+
+/* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* background-size: 100%; */
+
+}
+* {
+    box-sizing: border-box;
+  }
+
+#myVideo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	min-height: 100%;
+	min-width: 100%;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 120px;
+    margin-bottom: 30px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.title{
+  font-size:55px;
+  text-shadow: 0 0 2px black;
+  color: white;
+  position:absolute;
+  left:40%;
+  top:15%;
+}
+
+/* Add styles to the form container */
+.container {
+    block-size: 40%;
+    position: absolute;
+    bottom: 20%;
+    right: 37%;
+    margin: 25px;
+    max-width: 25%;
+    padding: 33px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 6%;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 100%;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.text{
+    font-family: 'Varela Round';
+    color: #ddd;
+    font-size: 20px;
+}
+
+.g-signin2{
+
+}
+

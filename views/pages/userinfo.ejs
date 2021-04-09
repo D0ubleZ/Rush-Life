@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./stylesheets/userinfo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title></title>
+  </head>
+  <body class="container">
+    <div class="row">
+      <form action="update" method="post">
+      <div class="column1">
+        <h2 align = "center">Today Work</h2>
+              <input style="display:none" type="text" value="<%= customers.rows[0].name %>" name="name" required>
+              <table style=" table-layout: auto;">
+              <tr><td style = " font-size: 20px; font-family: serif; font-style: normal;">Which sport today: </td></tr>
+              <tr><td class="td1">Swim :</td><td><input input type= "text" name="swim" value="0">(hours)</td></tr>
+              <tr><td class="td1">Aerobic Running :</td><td><input type= "text" name="aerobic_running" value="0">(hours)</td></tr>
+              <tr><td class="td1">Mountaineering :</td><td><input type= "text" name="mountaineering" value="0">(hours)</td></tr>
+              <tr><td class="td1">Cycling Sport :</td><td><input type= "text" name="cycling_sport" value="0">(hours)</td></tr>
+              <tr><td class="td1">Ball Games :</td><td><input type= "text" name="ball_games" value="0">(hours)</td></tr>
+              <tr><td class="td1">Gym Exercise :</td><td><input type= "text" name="gym_exercise" value="0">(hours)</td></tr>
+            </table>
+      </div>
+      <div class="column2">
+              <h2 align = "center">Which food today: </h2>
+              <table>
+                <tr><td class="td1">Pork :</td>
+                  <td class="td1"><select class = "select1" name="porkkg">
+                    <option value="0">0</option>
+                    <option value="0.2">0.2</option>
+                    <option value="0.4">0.4</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.8">0.8</option>
+                    <option value="1.0">1.0</option>
+                  </select>(kg)</td>
+                </tr>
+                <tr><td class="td1">Fish :</td>
+                  <td class="td1"><select class = "select1" name="fishkg">
+                    <option value="0">0</option>
+                    <option value="0.2">0.2</option>
+                    <option value="0.4">0.4</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.8">0.8</option>
+                    <option value="1.0">1.0</option>
+                  </select>(kg)</td>
+                </tr>
+                <tr><td class="td1">Chicken :</td>
+                  <td class="td1"><select class = "select1" name="chickenkg">
+                    <option value="0">0</option>
+                    <option value="0.2">0.2</option>
+                    <option value="0.4">0.4</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.8">0.8</option>
+                    <option value="1.0">1.0</option>
+                  </select>(kg)</td>
+                </tr>
+                <tr><td class="td1">Egg :</td>
+                  <td class="td1"><select class = "select1" name="eggkg">
+                    <option value="0">0</option>
+                    <option value="0.2">0.2</option>
+                    <option value="0.4">0.4</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.8">0.8</option>
+                    <option value="1.0">1.0</option>
+                  </select>(kg)</td>
+                </tr>
+                <tr><td class="td1">Rice :</td>
+                  <td class="td1"><select class = "select1" name="ricekg">
+                    <option value="0">0</option>
+                    <option value="0.2">0.2</option>
+                    <option value="0.4">0.4</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.8">0.8</option>
+                    <option value="1.0">1.0</option>
+                  </select>(kg)</td>
+                </tr>
+                <tr><td class="td1">Noodle :</td>
+                  <td class="td1"><select class = "select1" name="noodlekg">
+                    <option value="0">0</option>
+                    <option value="0.2">0.2</option>
+                    <option value="0.4">0.4</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.8">0.8</option>
+                    <option value="1.0">1.0</option>
+                  </select>(kg)</td>
+                </tr>
+              </table>
+
+              <button style="width:100px;height:30px" class="btn btn-danger" type="submit"> SUBMIT</button>
+            </form>
+<br>
+            <form action="back2" method="get">
+              <button style="width:100px;height:50px" class="btn btn-dark" type="submit" name="btn1">BACK</button>
+            </form>
+
+            <form action="graph" method="post">
+              <input style="display:none" type="text" value="<%= customers.rows[0].name %>" name="name" required>
+              <button style="width:100px;height:50px" class="btn btn-primary" type="submit" name="graph">Show graph</button>
+            </form>
+
+      </div>
+  </body>
+</html>

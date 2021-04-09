@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    <link rel="stylesheet" href="./stylesheets/user.css">
+    <title></title>
+  </head>
+  <body class="container">
+    <div class = "div1" id = "div1"></div>
+
+    <form action="userinfo" method="post">
+      <input type="text" id = "name" name = "name">
+      <button type= "submit" class="btn button1" name="btn1">YOU</button>
+    </form>
+
+    <h1 align="center">Health&nbspLife</h1>
+    <form action="information" method="post">
+      <input type="text" id = "name2" name = "name">
+      <button class="btn button5" name="btn5">Work</button>
+    </form>
+    <form action="/calendar" method="post">
+      <input type="text" id = "name3" name = "name">
+      <button class="btn button2" name="btn2">Calender</button>
+    </form>
+
+      <a href="https://rush-life-forum.herokuapp.com/index.php">
+        <button class="btn button3" name="btn3">Forum</button></a>
+
+    <!-- <form action=".html" method="get"> -->
+      <a href="/workout_videos.html">
+        <button class="btn button4" name="btn4">Video</button>
+    <!-- </form> -->
+
+    <div class="dropdown" style="float:right;">
+      <button class="dropbtn">------Home------</button>
+      <div class="dropdown-content" style="left:0;">
+
+      <a href="login.html">Signing out</a>
+
+    </div>
+  </body>
+  <script src='cookie.js'></script>
+      <script>
+      window.onload=function(){
+          var num=cookie.getCookie('num');
+          var oDiv=document.getElementById('div1');
+
+          oDiv.innerHTML="---User:"+num+"'s page---";
+          document.getElementById('name').value = num;
+          document.getElementById('name2').value = num;
+          document.getElementById('name3').value = num;
+        }
+
+      </script>
+</html>

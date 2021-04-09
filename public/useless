@@ -1,0 +1,26 @@
+//empty string table
+var table = '';
+//generate header
+table += '<tr class="header">';
+table += '<th style="width:25%;">'+Name+'</th>'
+table +='</tr>';
+table += '<tr class="header">';
+table += '<th style="width:25%;">'+Weight+'</th>'
+table +='</tr>';
+table += '<tr class="header">';
+table += '<th style="width:25%;">'+Height+'</th>'
+table +='</tr>';
+table += '<tr class="header">';
+table += '<th style="width:25%;">'+Country+'</th>'
+table +='</tr>';
+//generate table row col
+var rows = 4;
+var cols = 4;
+for (var r = 0; r < rows; r++) {
+  table += '<tr>';
+    for (var c = 0; i < clos; c++) {
+      table += '<td>'+c+'</td>'
+    }
+  table +='</tr>';
+}
+document.write('<table id="myTable">' + table +'</table>');

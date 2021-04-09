@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    <link rel="stylesheet" href="./stylesheets/userinformation.css">
+    <title>userinformation</title>
+  </head>
+  <body style="background-image:url('scenery.jpeg');">
+    <div1>
+    <h1>Rush Life</h1>
+    </div1>
+      <div style="text-align: center;">
+		<div class="table-a">
+		<table width="400" boder="0" cellspacing="0" cellpadding="0">
+		<tr>
+		<td>Out door</td>
+		</tr>
+		<tr>
+      <td><iframe width="720" height="480" src="https://www.youtube.com/watch?v=OihBUKIFrss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe></td>
+      <td><iframe width="720" height="480" src="https://www.youtube.com/watch?v=YUEs8yQ-MBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe></td>
+       <td><iframe width="720" height="480" src="https://www.youtube.com/watch?v=BQ4gUMaVJrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe></td>
+      <td><iframe width="720" height="480" src="https://www.youtube.com/watch?v=j57HMjVM7Is" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe></td>
+      <td><iframe width="720" height="480" src="https://www.youtube.com/watch?v=ruLDd0T8II0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe></td>
+ 		</tr>
+ 		<tr>
+     <td>No Gym Intensive Fat Burning Workout</td>
+     <td>9Minutes Fat Burning-Beginner&Intermediate Level</td>
+		<td>Fat Buring Abs Workout(no gym)</td>
+		<td>No Gym Full Body Workout</td>
+		<td>10 Minutes Intensive Fat Burning With New Exercises</td>
+		</tr>
+          </div>
+          <tr>
+			<p></p>
+			 </table>			
+			
+          <div>
+   
+          </div>
